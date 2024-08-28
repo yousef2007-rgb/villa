@@ -57,7 +57,7 @@ export default function Home() {
           <p className="font-bold p-2">اشترِ بيت احلامك اللآن</p>
           <Link
             className="bg-[#1E97B1] px-5 py-2 mt-3 rounded-full text-xl"
-            href={"https://wa.me/0795512457"}
+            href={"https://wa.me/962795512457"}
           >
             تواصل مع المالك
           </Link>
