@@ -12,6 +12,7 @@ export default function images({ images }: { images: string[] }) {
               src={src}
               alt={`Image ${index + 1}`}
               layout="fill"
+              loading="lazy"
               objectFit="cover"
               className="rounded-lg cursor-pointer"
             />

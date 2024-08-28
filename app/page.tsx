@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "فيلا فاخرة للبيع في دابوق، أرقى مناطق عمان، قريبة من بوابة القصور الملكية، بناء شخصي وليس تجارياً، من المالك مباشرة، إطلالة رائعة، على شارعين، جلسات خارجية ومسبح، مصعد داخلي، مطبخ طهبوب، درج دائري، صالات واسعة، حجر معان نخب أول، رخام كريما مارفل إسباني، تدفئة تحت البلاط، نظام تمديد غاز مع خزان 3000 لتر، ألمنيوم شركة الفقير، تصميم مميز.",
   },
   icons: {
-    icon: "/icon.jpg",
+    icon: "/icon.png",
   },
   robots: "index, follow",
 };
@@ -75,6 +75,7 @@ export default function Home() {
               src={"/main.jpg"}
               alt="main image"
               layout="fill"
+              loading="lazy"
               objectFit="cover"
               className="rounded-lg cursor-pointer"
             />
