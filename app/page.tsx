@@ -1,112 +1,181 @@
+import Link from "next/link";
+import House from "./../public/icons/house";
+import Floor from "./../public/icons/floor";
+import Bedroom from "./../public/icons/bedroom";
+import Bath from "./../public/icons/bath";
+import Building from "./../public/icons/building";
+import Road from "./../public/icons/road";
+import Pool from "./../public/icons/pool";
+import Images from "@/components/images";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "فيلا فاخرة في دابوق",
+  description:
+    "فيلا فاخرة للبيع في دابوق، أرقى مناطق عمان، قريبة من بوابة القصور الملكية، بناء شخصي وليس تجارياً، من المالك مباشرة، إطلالة رائعة، على شارعين، جلسات خارجية ومسبح، مصعد داخلي، مطبخ طهبوب، درج دائري، صالات واسعة، حجر معان نخب أول، رخام كريما مارفل إسباني، تدفئة تحت البلاط، نظام تمديد غاز مع خزان 3000 لتر، ألمنيوم شركة الفقير، تصميم مميز.",
+  keywords:
+    "فيلا للبيع، Villa for sale، دابوق، Dabouq، عمان، Amman، عقارات فاخرة، Luxury property، قرب القصور الملكية، Royal palace proximity، حي راقي، High-end neighborhood، بناء شخصي، Non-commercial construction، اطلالة رائعة، Panoramic view، على شارعين، Double street access، جلسات خارجية، Outdoor seating areas، مسبح خاص، Private pool، مصعد داخلي، Indoor elevator، مطبخ طهبوب، Custom kitchen، درج دائري، Spiral staircase، صالات واسعة، Spacious living rooms، حجر معان، Ma'an stone، رخام كريما مارفل إسباني، Crema Marfil marble، تدفئة تحت البلاط، Underfloor heating، نظام تمديد غاز، Gas extension system، خزان 3000 لتر، Gas tank 3000 liters، ألمنيوم شركة الفقير، Al Fakher aluminum، تصميم مميز، Unique design، من المالك مباشرة، Direct sale، بدون وسطاء، No intermediaries، تشطيبات فاخرة، Luxurious finishes، موقع مميز، Prime location، فرصة استثمارية، Investment opportunity، نمط حياة فاخر، Luxury lifestyle.",
+  viewport: "width=device-width, initial-scale=1.0",
+  openGraph: {
+    title: "فيلا فاخرة في دابوق",
+    description:
+      "فيلا فاخرة للبيع في دابوق، أرقى مناطق عمان، قريبة من بوابة القصور الملكية، بناء شخصي وليس تجارياً، من المالك مباشرة، إطلالة رائعة، على شارعين، جلسات خارجية ومسبح، مصعد داخلي، مطبخ طهبوب، درج دائري، صالات واسعة، حجر معان نخب أول، رخام كريما مارفل إسباني، تدفئة تحت البلاط، نظام تمديد غاز مع خزان 3000 لتر، ألمنيوم شركة الفقير، تصميم مميز.",
+    type: "website",
+    images: ["/image1.jpg"],
+  },
+  twitter: {
+    card: "summary",
+    site: "@intex-jo",
+    title: "فيلا فاخرة في دابوق",
+    description:
+      "فيلا فاخرة للبيع في دابوق، أرقى مناطق عمان، قريبة من بوابة القصور الملكية، بناء شخصي وليس تجارياً، من المالك مباشرة، إطلالة رائعة، على شارعين، جلسات خارجية ومسبح، مصعد داخلي، مطبخ طهبوب، درج دائري، صالات واسعة، حجر معان نخب أول، رخام كريما مارفل إسباني، تدفئة تحت البلاط، نظام تمديد غاز مع خزان 3000 لتر، ألمنيوم شركة الفقير، تصميم مميز.",
+  },
+  icons: {
+    icon: "/icon.jpg",
+  },
+  robots: "index, follow",
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  const images = ["/image1.jpg", "/image2.jpg", "/image3.jpg", "/image4.jpg"];
+  const images2 = ["/image5.jpg", "/image6.jpg", "/image7.jpg", "/image8.jpg"];
+  const images3 = [
+    "/image9.jpg",
+    "/image10.jpg",
+    "/image11.jpg",
+    "/image12.jpg",
+  ];
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+  return (
+    <main className="">
+      <div className="bg-[#166273] text-white text-center">
+        رقم المالك:0795512457
+      </div>
+      <div className="w-[97%] mx-auto mt-3 bg-[#166273] sm:flex-row flex-col flex rounded-lg">
+        <article className="flex-1 p-4 mt-4 !h-full sm:my-auto flex items-center justify-center flex-col text-center text-white text-3xl">
+          <p className="font-bold p-2">اشترِ بيت احلامك اللآن</p>
+          <Link
+            className="bg-[#1E97B1] px-5 py-2 mt-3 rounded-full text-xl"
+            href={"https://wa.me/0795512457"}
+          >
+            تواصل مع المالك
+          </Link>
+        </article>
+        <img
+          className="sm:w-[60%] w-full mt-4 rounded-lg"
+          src="/hero.png"
+          alt=""
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      <div className="w-[97%] max-w-[700px] mx-auto mt-8  sm:flex-row flex-col-reverse flex rounded-lg">
+        <div className="relative mt-2 sm:w-[50%] w-full cursor-pointer h-64">
+          <Link className="cursor-pointer" href={`/imageviewer/${"main.jpg"}`}>
+            <Image
+              src={"/main.jpg"}
+              alt="main image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg cursor-pointer"
+            />
+          </Link>
+        </div>
+        <article className="flex sm:!w-[50%] object-cover flex-col items-end text-right w-full">
+          <p className="font-bold text-xl sm:text-right sm:w-fit w-full !text-center">
+            فيلا فاخرة للبيع
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="mt-2 sm:text-right !text-center sm:w-fit w-full">
+            دابوق، عمان قرب بوابة القصور الملكية
           </p>
-        </a>
+          <div className="flex flex-col sm:mx-0 mx-auto">
+            <div className="flex mt-6 justify-evenly items-center flex-row-reverse text-right">
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Floor />
+                <p className="font-bold text-md">٤ طوابق و روف</p>
+              </div>
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Bedroom />
+                <p className="font-bold text-md">٨ غرف نوم</p>
+              </div>
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Bath />
+                <p className="font-bold text-md">٨ حمامات</p>
+              </div>
+            </div>
+            <div className="flex mt-6 justify-evenly items-center flex-row-reverse text-right">
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Building />
+                <p className="font-bold text-md">1300 متر مربع</p>
+              </div>
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Road />
+                <p className="font-bold text-md">على شارعين</p>
+              </div>
+              <div className="flex flex-col text-center sm:text-right items-center sm:items-end mx-3 max-w-[105px]">
+                <Pool />
+                <p className="font-bold text-md">مسبح خارجي</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div className="flex flex-col mt-8">
+        <div className="flex xs:flex-row flex-col max-w-[700px] mx-auto">
+          <ul className="text-right  px-2 flex-1">
+            <li>
+              <strong>الطابق الأرضي</strong> يتميز بالرخام الإسباني الفاخر في
+              الصالونات، مع توفير مساحات متعددة للجلوس وتناول الطعام، بالإضافة
+              إلى مطبخين لتلبية احتياجات مختلفة. التراسات المتعددة تضيف إطلالة
+              رائعة ومساحة مفتوحة للتهوية والاستمتاع بالمناظر الخارجية.
+            </li>
+            <li>
+              <strong>الطابق الأول</strong> يعزز الخصوصية والراحة مع جناح النوم
+              الكبير وغرف النوم الماستر، بالإضافة إلى وجود فايربليس يضفي دفئًا
+              وجوًا مميزًا.
+            </li>
+            <li>
+              <strong>الروف</strong> مصمم ليكون مساحة ترفيهية ممتازة، مع إطلالات
+              بانورامية، مسبح مدفأ مناسب للأطفال والكبار، ومساحات مخصصة للشواء
+              والاسترخاء في الهواء الطلق. المواد المستخدمة كالزجاج المضاد للكسر
+              تضيف عنصرًا من الأمان والحداثة للتصميم.
+            </li>
+          </ul>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <video
+            autoPlay
+            muted
+            src="/video.mp4"
+            controls
+            loop
+            className="w-[90%] xs:max-w-[290px] xs:h-[300px] rounded-xl mx-auto xs:mt-0 mt-4  "
+          ></video>
+        </div>
+      </div>
+      <div className="flex flex-col mt-8">
+        <p className="font-bold text-xl w-full !text-center">اطلالة رائعة</p>
+        <Images images={images} />
+      </div>
+      <div className="flex flex-col mt-8">
+        <p className="font-bold text-xl w-full !text-center">صالات واسعة</p>
+        <Images images={images2} />
+      </div>
+      <div className="flex flex-col mt-8">
+        <p className="font-bold text-xl w-full !text-center">
+          ساحة خارجية مع مسبح
+        </p>
+        <Images images={images3} />
+      </div>
+      <div className="px-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1075.5994956123586!2d35.8278681!3d32.0129497!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sjo!4v1724873631030!5m2!1sen!2sjo"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-2xl"
+        ></iframe>
       </div>
     </main>
   );
